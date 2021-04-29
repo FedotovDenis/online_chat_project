@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 130%; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    padding-top: 50px;
+    color: #333899;
+    align-items: center;
+    text-align: center;
+   
+}
+
+header {
+    padding-bottom: 75px;
+}
+
+.form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(91, 128, 82);
+    padding: 5px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 3px solid #557
+}
+
+.name {
+    height: 30px;
+    background: rgb(49, 138, 27);
+    padding: 20px;
+    border-radius: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(186, 182, 197, 0.801);
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.input {
+    height: 30px;
+    border-radius: 55px;
+    border: none;
+    margin: 5px;
+    padding: 0 25px;
+    display: flex;
+    width: 100%;
+    outline: none;
+}
+
+.btn {
+    background: rgb(92, 81, 81);
+    border: none;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    color: rgb(235, 224, 224);
+    border-radius: 55px;
+}
+
+.messages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.messages > li {
+    padding: 10px;
+}
+
+.messages > li > span {
+    font-weight: 500;
+}
+
+.messages > li:nth-child(odd) {
+    background: #efefef;
+}
