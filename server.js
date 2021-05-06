@@ -23,6 +23,7 @@ app.use(express.static(__dirname + '/styles'))
 
 // подключаем lavascript код
 app.use(express.static(__dirname + '/main'))
+app.listen(process.env.PORT);
 
 // выполняем connection
 io.on('connection', (socket) => {
@@ -35,6 +36,6 @@ io.on('connection', (socket) => {
     })
 })
 
-http.listen(3000, () => {
+http.listen(process.env.PORT || 3000, () => {
     console.log('server is running')
 })
